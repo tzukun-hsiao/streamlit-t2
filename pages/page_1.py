@@ -1,7 +1,7 @@
 # Import packages
 import streamlit as st
 import pandas as pd
-from assets.styling import hide_toolbar
+from predefined_functions.styling import hide_toolbar
 
 # Add a title
 st.title('Text formatting and working with CSV file')
