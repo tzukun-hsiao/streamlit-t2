@@ -27,9 +27,13 @@ st.markdown(md_list)
 
 md_txt = """
 This is a sentence.   
-**This sentence is in bold text.** *This sentence is in italic text.*
+**This sentence is in bold.** *This sentence is italicized.*
 """
 st.markdown(md_txt)
+
+md_link = """
+[Link to Google](https://www.google.com)
+"""
 
 my_height = 172
 md_txt_height = f"""
