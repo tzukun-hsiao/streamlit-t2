@@ -71,6 +71,13 @@ st.dataframe(df_g)
 for i, row in df_g.iterrows():
     st.write(row.name, row['species'])
 
+# Tabs
+tab1, tab2 = st.tabs(['Full dataframe', 'Groupby dataframe'])
+with tab1:
+    st.dataframe(df)
+with tab2:
+    st.dataframe(df_g)
+
 # Exercise
 # Create 3 columns. 
 # First column display total number of peguins using metric
