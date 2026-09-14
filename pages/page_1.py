@@ -4,7 +4,7 @@ import pandas as pd
 from predefined_functions.styling import hide_toolbar
 
 # Add a title
-st.title('Text formatting and working with CSV file')
+st.title('Streamlit basics, text formatting, and working with CSV file')
 
 # Markdown for text formatting
 md_heading = """
