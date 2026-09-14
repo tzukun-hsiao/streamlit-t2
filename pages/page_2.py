@@ -166,3 +166,24 @@ with col2:
         title=f'{selected_species} penguins'
     )
     st.plotly_chart(fig, key='interactive_line')
+
+
+st.header('Some other widgets')
+all_cols = df.columns.tolist()
+multi_seletions = st.multiselect(label='Select multiple items from:', options=all_cols)
+st.write(f'Selected items: {multi_seletions}')
+
+my_slider = st.slider(
+    label='Select a range of body mass', 
+    max_value=df['body_mass_g'].max(),
+    min_value=df['body_mass_g'].min(),
+    value = (df['body_mass_g'].min(), df['body_mass_g'].max())
+)
+st.write(f'Selected range: {my_slider}')
+
+my_checkbox = st.checkbox(label='Show data')
+st.write(my_checkbox)
+if my_checkbox:
+    st.dataframe(df)
+else:
+    pass
